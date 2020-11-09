@@ -1,0 +1,97 @@
+body {
+	/*background-image: url("img/background_image.jpg");
+	background-repeat: no-repeat;*/
+	background-color: #000000;
+	background-position: center;
+	
+	font-family: arial, serif;
+	color: #fff;
+}
+#videoDiv {
+	display: none;
+}
+#gameDiv {
+	margin-top: 31px;
+	display: none;
+}
+#menuDiv {
+	margin-top: 31px;
+	width: 800px;
+	height: 600px;
+	display: inline-block;
+	background-image: url("img/menu/gameMenu.jpg");
+}
+#playButton {
+	margin-top: 250px;
+}
+#playButton:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+	cursor: pointer;
+}
+
+#introDiv{
+	width: 800px;
+	height: 600px;
+	background-color: #000000;
+	display: none;
+}
+#understandable{
+	font-size: 20px;
+}
+
+#understandable:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	cursor: pointer;
+}
+
+#introText{
+	margin-top: 0px;
+}
+#warningDiv{
+	display: none;
+}
+#warningOK{
+	margin-top: 50px;
+	font-size: 25px;
+}
+
+#warningOK:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	cursor: pointer;
+}
+
+#gameoverDiv1 {
+	width: 800px;
+	height: 600px;
+	background-color: #000000;
+	display: none;
+}
+#gameoverDiv2 {
+	width: 800px;
+	height: 600px;
+	background-color: #000000;
+	display: none;
+}
+.respawn {
+	margin-top: 0px;
+	font-size: 50px;
+}
+.respawn:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	cursor: pointer;
+}
+
+#creditsDiv{
+	width: 800px;
+	height: 600px;
+	display: none;
+}
+#creditsImg{
+	/*top: 600px;*/
+}
+
+

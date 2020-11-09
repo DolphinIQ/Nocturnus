@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="img/logos/favicon-96x96.png" sizes="96x96">
+<!-- favicon-16x16.png - The classic favicon, displayed in the tabs. -->
+<link rel="icon" type="image/png" href="img/logos/favicon-16x16.png" sizes="16x16">
+<!-- favicon-32x32.png - For Safari on Mac OS. -->
+<link rel="icon" type="image/png" href="img/logos/favicon-32x32.png" sizes="32x32">
+
+  <title>Nocturnus</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+<center>
+<div id="gameDiv"> <canvas id="gameCanvas" width="800" height="600" ></canvas> </div>
+<div id="videoDiv"> 
+	<video id="video1" width="800" height="600">
+		<source src="img/monster/aop.mp4" type="video/mp4">
+		<!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+		Your browser does not support HTML5 video.
+	</video> 
+</div>
+<div id="menuDiv">
+	<img id="playButton" src="img/menu/playButton.png" onclick="Warning()"></img>
+</div>
+<div id="introDiv">
+	<div id="introText">
+		<img src="img/menu/instructions.png" />
+		<img src="img/menu/instructions2.png" />
+	</div>
+	<div id="understandable" onclick="PLAY()"> Understandable, Done! </div>
+</div>
+<div id="warningDiv">
+	<img src="img/menu/warnings.png" />
+	<div id="warningOK" onclick="Introduction()"> Got It! </div>
+</div>
+<div id="gameoverDiv1">
+	<img src="img/menu/gameover1.jpg" />
+	<div class="respawn" onclick="Respawn()"> Continue... </div>
+</div>
+<div id="gameoverDiv2">
+	<img src="img/menu/gameover2.jpg" />
+	<div class="respawn" onclick="Respawn()"> Continue... </div>
+</div>
+<div id="creditsDiv">
+	<img id="creditsImg" src="img/menu/credits.jpg" />
+</div>
+</center>
+
+<script src="js/GraphicsCommon.js"></script>
+<script src="js/ImageLoading.js"></script>
+<script src="js/Sounds.js"></script>
+<script src="js/WarriorFiles.js"></script>
+<script src="js/Monster.js"></script>
+<script src="js/Main.js"></script>
+<script src="js/Worlds.js"></script>
+<script src="js/Input.js"></script>
+<script src="js/Camera.js"></script>
+<script src="js/Menu.js"></script>
+<!-- <audio id="backgroundMusic" loop autoplay>
+	<source src= "sound/background_music.ogg" type="audio/ogg" />
+	<source src="sound/background_musicv2.mp3" type="audio/mp3" />
+</audio> -->
+<center>
+<!-- <table><tr>
+	<td><img src="img/volume.png"></td>
+	<td><input id="bgMusicSlider" type="range" min="0" max="1" step="0.05" value="0.00" onchange="changeVolume()" title="Music and sound volume"></td>
+	</tr></table> -->
+</center>
+
+</body>
+</html>
